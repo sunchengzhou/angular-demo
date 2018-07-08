@@ -4,8 +4,8 @@
 
 # 组件的知识：
 ## 必备的：
-装饰器 @Component()
-模板 Template
+装饰器 @Component() <br/>
+模板 Template</br>
 控制器 Controller
 ## 可选的
 输入属性  @inputs()
