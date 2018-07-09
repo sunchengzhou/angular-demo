@@ -14,6 +14,7 @@
 3. 生命周期钩子   LifeCycles Hooks
 
 ## 引入jquery *Bootstrap*:
+### 方法1：配置文件路径中写入
 1. 包的引入：
 ```
 npm install jquery bootstrap --save
@@ -70,7 +71,7 @@ export class AppComponent {
   }
 }
 ```
-## 方法2：把jquery.js bootstrap.js等放入assets文件夹
+#### 方法2：把jquery.js bootstrap.js等放入assets文件夹
 > 把jquery.js bootstrap.js等放入assets文件夹,且在页面中 <src="assets/jquery.min.js">,这样webpack打包时会打包到对应的js文件中
 
 
