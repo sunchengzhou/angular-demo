@@ -25,7 +25,7 @@
   },
   ```
 
-  ``` typescript
+  ``` javascript
   @NgModule({
   declarations: [   //组件  指令 管道
     AppComponent,
