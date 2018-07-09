@@ -41,7 +41,8 @@ npm install @types/jquery @types/bootstrap --save-dev
       ],
 ```
 3. 类型支持适配
-``` 
+> ts中申明$字符的类型
+``` javascript
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 declare var $: any;     //  申明$在ts中的类型
