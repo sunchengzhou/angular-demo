@@ -13,6 +13,17 @@
 2. 提供器    providers
 3. 生命周期钩子   LifeCycles Hooks
 
+``` 
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  ```
 
 
 
