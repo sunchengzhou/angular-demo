@@ -13,34 +13,61 @@
 2. 提供器    providers
 3. 生命周期钩子   LifeCycles Hooks
 
+## 引入jquery *Bootstrap*:
+1. 包的引入：
+```
+npm install jquery bootstrap --save
+// 引入ts对jquery，bootstrap支持
+// 注意引入对应版本
+npm install @types/jquery @types/bootstrap --save-dev
+```
+2. 配置目录文件.angular-cli.json
+> cnpm下文件路径不与npm相同，对应的文件引入方式
+```
+      "styles": [
+        "styles.css",
+        "../node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.min.css"
+      ],
+      "scripts": [
+        "../node_modules/_jquery@3.3.1@jquery/dist/jquery.min.js",
+        "../node_modules/_bootstrap@3.3.7@bootstrap/dist/js/bootstrap.min.js"
+      ],
+```
+> npm下引入方式
+```
+      "styles": [
+        "styles.css",
+        "../node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.min.css"
+      ],
+```
+3. 类型支持适配
 ``` 
-  "license": "MIT",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  ```
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+declare var $: any;     //  申明$在ts中的类型
 
-  ``` javascript
-  @NgModule({
-  declarations: [   //组件  指令 管道
-    AppComponent,
-    HomeComponent,
-    ProductComponent,
-    Code404Component
-  ],
-  imports: [
-    BrowserModule,   //浏览器模块
-    AppRoutingModule  //路由模块
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class AppModule { }
+export class AppComponent {
+  title = 'app';
+  ngOnInit(): void {
+    $(() => {
+      $('#test').click(() => {
+        alert('test');
+      });
+    });
+  }
+  constructor(private router:Router){
+
+  }
+
+  toProductDetail() {
+    this.router.navigate(['/product'])
+  }
+}
 ```
 
 
