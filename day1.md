@@ -25,6 +25,24 @@
   },
   ```
 
+  ``` typescript
+  @NgModule({
+  declarations: [   //组件  指令 管道
+    AppComponent,
+    HomeComponent,
+    ProductComponent,
+    Code404Component
+  ],
+  imports: [
+    BrowserModule,   //浏览器模块
+    AppRoutingModule  //路由模块
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
 
 
 
