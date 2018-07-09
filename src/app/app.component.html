@@ -1,7 +1,12 @@
-<div>app页面</div>
-<a  [routerLink]="['/']">主页</a>
-<a  [routerLink]="['/product']">产品</a>
-<div class="btn btn-primary">点击查看</div>
-<div id="test" class="btn btn-danger">测试</div>
-<input type="button" value="商品详情" (click)="toProductDetail()">
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">头部</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">左侧</div>
+    <div class="col-md-9">右侧</div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">页脚</div>
+  </div>
+</div>
