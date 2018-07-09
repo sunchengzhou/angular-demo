@@ -8,7 +8,7 @@
 1. 装饰器 @Component()
 2. 模板 Template
 3. 控制器 Controller
---------------------
+====================
 ## 可选的
 1. 输入属性  @inputs()
 2. 提供器    providers
