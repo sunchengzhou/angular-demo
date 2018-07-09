@@ -37,7 +37,7 @@ npm install @types/jquery @types/bootstrap --save-dev
 ```
       "styles": [
         "styles.css",
-        "../node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.min.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
 ```
 3. 类型支持适配
@@ -70,6 +70,8 @@ export class AppComponent {
   }
 }
 ```
+## 方法2：把jquery.js bootstrap.js等放入assets文件夹
+> 把jquery.js bootstrap.js等放入assets文件夹,且在页面中*<src="assets/jquery.min.js">*,这样webpack打包时会打包到对应的js文件中
 
 
 
