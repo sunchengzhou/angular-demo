@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { Code404Component } from './code404/code404.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { Code404Component } from './code404/code404.component';
     AppComponent,
     HomeComponent,
     ProductComponent,
-    Code404Component
+    Code,
+    NavbarComponent,
+    FooterComponent404Component
   ],
   imports: [
     BrowserModule,   //浏览器模块

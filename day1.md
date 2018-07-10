@@ -2,6 +2,9 @@
 
 > 组件，服务，指令----核心：模块
 
+# angular-cli使用
+> ng -v                 查看版本信息
+> ng new ProductName    生产angular模板
 
 # 组件的知识：
 ## 必备的：
