@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { Code404Component } from './code404/code404.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { SearchComponent } from './search/search.component';
+import { StarsComponent } from './stars/stars.component';
 
 
 @NgModule({
@@ -14,7 +19,12 @@ import { Code404Component } from './code404/code404.component';
     AppComponent,
     HomeComponent,
     ProductComponent,
-    Code404Component
+    Code404Component,
+    NavbarComponent,
+    FooterComponent,
+    CarouselComponent,
+    SearchComponent,
+    StarsComponent,
   ],
   imports: [
     BrowserModule,   //浏览器模块

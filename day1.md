@@ -1,7 +1,11 @@
 # angular程序架构
 
 > 组件，服务，指令----核心：模块
-
+> @angular/cli 组件
+> 指令如下：
+> ng version
+> ng new ProjectName
+> ng g c 组件
 
 # 组件的知识：
 ## 必备的：
