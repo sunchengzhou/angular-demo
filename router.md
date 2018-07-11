@@ -16,6 +16,13 @@
 | 在路由路径传递参数 | {path:/product/:id} =>/product/1 => ActivatedRoute.params[id] |
 | 在路由配置传递参数 | {path:/product,component:ProductComponent,data:[{isProd:true}]} => ActivatedRoute.data[0][isProd] |
 
+## 路由重定向
+``` javascript
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+```
+
+
 
 
 

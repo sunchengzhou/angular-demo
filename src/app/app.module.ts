@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { Code404Component } from './code404/code404.component';
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { Code404Component } from './code404/code404.component';
     AppComponent,
     HomeComponent,
     ProductComponent,
+    CategoryComponent,
     Code404Component
   ],
   imports: [
