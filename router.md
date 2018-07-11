@@ -9,6 +9,7 @@
 | ActivatedRoute | 激活的路由对象，保存了路由地址，路由参数等 |
 
 #路由时传递参数
+
 | 方式 | 写法 |
 | - | :---: |
 | 在路由时传递参数 | /product?id=1&name=2 => ActivatedRoute.queryParams[id] |
