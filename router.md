@@ -1,7 +1,7 @@
 # angular Route导航
 
 | 名称 | 简介 |
-| - | :-: |
+| - | :---: |
 | Routes | 路由的配置信息|
 | RouterOutlet | 路由的展示容器 |
 | Router | 路由执行对象，可以用其navigate(),navigateByUrl()跳转指定路由 |
