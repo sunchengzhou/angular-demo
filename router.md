@@ -8,13 +8,13 @@
 | RouterLink | html中与a标签配合的跳转 |
 | ActivatedRoute | 激活的路由对象，保存了路由地址，路由参数等 |
 
-#路由时传递参数
+## 路由时传递参数
 
 | 方式 | 写法 |
 | - | :---: |
-| 在路由时传递参数 | /product?id=1&name=2 => ActivatedRoute.queryParams[id] |
-| 在路由时传递参数 | /product?id=1&name=2 => ActivatedRoute.queryParams[id] |
-| 在路由时传递参数 | /product?id=1&name=2 => ActivatedRoute.queryParams[id] |
+| 在查询参数中传递参数 | /product?id=1&name=2 => ActivatedRoute.queryParams[id] |
+| 在路由路径传递参数 | {path:/product/:id} =>/product/1 => ActivatedRoute.params[id] |
+| 在路由配置传递参数 | {path:/product,component:ProductComponent,data:[{isProd:true}]} => ActivatedRoute.data[0][isProd] |
 
 
 
