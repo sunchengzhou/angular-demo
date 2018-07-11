@@ -1,5 +1,7 @@
 <div>app页面</div>
 <a  [routerLink]="['/']">主页</a>
+<!-- 这里路由是一个数组，以方便传递参数 -->
 <a  [routerLink]="['/product']">产品</a>
+<!-- angular事件绑定 -->
 <input type="button" value="商品详情" (click)="toProductDetail()">
 <router-outlet></router-outlet>
