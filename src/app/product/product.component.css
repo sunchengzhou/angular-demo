@@ -1,0 +1,7 @@
+.product {
+  background: rgb(119, 177, 12);
+  height:200px;
+  width: 70%;
+  float: left;
+  box-sizing: border-box;
+}

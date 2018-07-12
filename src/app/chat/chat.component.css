@@ -1,7 +1,7 @@
-.home {
-  background: rgb(119, 177, 12);
+.chat {
+  background: rgb(46, 156, 160);
   height: 200px;
-  width: 70%;
+  width: 30%;
   float: left;
   box-sizing: border-box;
 }

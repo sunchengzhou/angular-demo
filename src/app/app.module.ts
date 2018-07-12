@@ -10,6 +10,7 @@ import { CategoryComponent } from './category/category.component';
 import { ProductDscComponent } from './product-dsc/product-dsc.component';
 import { SellerInfoComponent } from './seller-info/seller-info.component';
 import { Code404Component } from './code404/code404.component';
+import { ChatComponent } from './chat/chat.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { Code404Component } from './code404/code404.component';
     CategoryComponent,
     ProductDscComponent,
     SellerInfoComponent,
-    Code404Component
+    Code404Component,
+    ChatComponent
   ],
   imports: [
     BrowserModule,   //浏览器模块

@@ -1,8 +1,13 @@
-<div>app页面</div>
-<a  [routerLink]="['/']">主页</a>
+<div class="app-nav">
+ <a  [routerLink]="['/']">主页</a>
 <!-- 这里路由是一个数组，以方便传递参数 -->
 <a  [routerLink]="['/product']" [queryParams]="{id:666}">产品</a>
 <a  [routerLink]="['/category',22]">种类信息</a>
 <!-- angular事件绑定 -->
 <input type="button" value="商品详情" (click)="toProductDetail()">
+<a  [routerLink]="[{outlets:{primary:'home',aux: 'chat'}}]">开始聊天</a>
+<a  [routerLink]="[{outlets:{aux: null}}]">结束聊天</a> 
+</div>
+
 <router-outlet></router-outlet>
+<router-outlet name="aux"></router-outlet>
