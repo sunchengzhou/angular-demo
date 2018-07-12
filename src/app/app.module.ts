@@ -9,6 +9,7 @@ import { ProductComponent } from './product/product.component';
 import { Code404Component } from './code404/code404.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -16,9 +17,10 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HomeComponent,
     ProductComponent,
-    Code,
+    Code404Component,
     NavbarComponent,
-    FooterComponent404Component
+    FooterComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,   //浏览器模块
