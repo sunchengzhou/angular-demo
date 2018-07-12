@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
+import { LoggerService } from './logger.service';
 
 @Injectable()
 export class ProductService {
 
-  constructor() { }
+  constructor(private logger: LoggerService) { }
 
   getProduct(): Product {
     return new Product(0, 'iphone7', 6999, '苹果品牌');

@@ -11,6 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { ProductService } from './data/product.service';
+import { Product2Component } from './product2/product2.component';
+import { LoggerService } from './data/logger.service';
 
 
 @NgModule({
@@ -21,13 +23,14 @@ import { ProductService } from './data/product.service';
     Code404Component,
     NavbarComponent,
     FooterComponent,
-    SearchComponent
+    SearchComponent,
+    Product2Component
   ],
   imports: [
     BrowserModule,   //浏览器模块
     AppRoutingModule  //路由模块
   ],
-  providers: [ProductService],
+  providers: [ProductService, LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
