@@ -21,4 +21,4 @@
 
 + 引入一个继承服务：  providers:[{ provide:ProductService, useClass: ProductService}]
 
-+ 引入一个继承服务：  providers:[{ provide:ProductService, useFactory: () => { ... }}]
++ 工厂模式抛出：  providers:[{ provide:ProductService, useFactory: () => { ... }}]
