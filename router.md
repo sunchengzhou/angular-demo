@@ -22,6 +22,20 @@
   { path: 'home', component: HomeComponent },
 ```
 
+## 子路由
+> children属性，其他配置同上一层
+> router-outlet 写到对应的父路由中
+
+``` javascript
+  {path:'product', component: ProductComponent,children:[
+    { path: '', component: ProductDscComponent },
+    { path: 'seller/:id', component: SellerInfoComponent },
+  ]},
+```
+
+
+
+
 
 
 

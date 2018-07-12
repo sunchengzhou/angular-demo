@@ -6,8 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
-import { Code404Component } from './code404/code404.component';
 import { CategoryComponent } from './category/category.component';
+import { ProductDscComponent } from './product-dsc/product-dsc.component';
+import { SellerInfoComponent } from './seller-info/seller-info.component';
+import { Code404Component } from './code404/code404.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { CategoryComponent } from './category/category.component';
     HomeComponent,
     ProductComponent,
     CategoryComponent,
+    ProductDscComponent,
+    SellerInfoComponent,
     Code404Component
   ],
   imports: [
