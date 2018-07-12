@@ -44,6 +44,14 @@
 <a [routerLink] ="['/home', {outlets:{aux: 'xxx'}}]">Xxx</a>
 <a [routerLink] ="['/product', {outlets:{aux: 'yyy'}}]">Yyy</a>
 ```
+## 路由守卫
+
+| 名称 | 简介 |
+| - | :---: |
+| CanActivate | 处理导航到某处的路由|
+| CanDeactivate | 处理从当前路由离开的情况 |
+| Resolve | 路由激活前获取路由情况 |
+
 
 
 
