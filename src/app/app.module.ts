@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { StarsComponent } from './stars/stars.component';
     CarouselComponent,
     SearchComponent,
     StarsComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,   //浏览器模块
