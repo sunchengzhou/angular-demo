@@ -10,6 +10,7 @@ import { Code404Component } from './code404/code404.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
+import { ProductService } from './data/product.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { SearchComponent } from './search/search.component';
     BrowserModule,   //浏览器模块
     AppRoutingModule  //路由模块
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
