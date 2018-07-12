@@ -1,0 +1,13 @@
+<p>
+  bind page works!
+</p>
+<button (click)="clickHand($event)">点我</button>
+<div>图片绑定测试：</div>
+<p>测试1：</p>
+<img [src]="imgUrl">
+<p>测试2：</p>
+<img src="{{imgUrl}}" alt="">
+<br>
+<input value="Tom" (input)="doOnInput($event)">
+<br>
+<button disabled="false">禁用的按钮</button>
