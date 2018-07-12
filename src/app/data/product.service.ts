@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { LoggerService } from './logger.service';
-
+// 装饰器可以注入别的服务
 @Injectable()
 export class ProductService {
 
-  constructor(private logger: LoggerService) { }
+  constructor(public logger:LoggerService) { }
 
   getProduct(): Product {
+    this.logger.log('productService runing!')
     return new Product(0, 'iphone7', 6999, '苹果品牌');
   }
 

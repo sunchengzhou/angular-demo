@@ -22,3 +22,9 @@
 + 引入一个继承服务：  providers:[{ provide:ProductService, useClass: ProductService}]
 
 + 工厂模式抛出：  providers:[{ provide:ProductService, useFactory: () => { ... }}]
+
+## 服务中装饰器可以注入别的服务
+
+> @Injectable() 建议所有的服务都加上这个装饰器
+
+> @Component()  是@Injectable()装饰器的子类，所以可以注入别的东西
