@@ -33,6 +33,18 @@
   ]},
 ```
 
+## 辅助路由
+```
+<router-outlet></router-outlet>
+<router-outlet name="aux"></router-outlet>
+
+{path:'xxx', component:XxxComponent, outlet:'aux'}
+{path:'yyy', component:YyyComponent, outlet:'aux'}
+
+<a [routerLink] ="['/home', {outlets:{aux: 'xxx'}}]">Xxx</a>
+<a [routerLink] ="['/product', {outlets:{aux: 'yyy'}}]">Yyy</a>
+```
+
 
 
 
