@@ -13,6 +13,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductService } from './data/product.service';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     BrowserModule,   //浏览器模块
     AppRoutingModule  //路由模块
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
