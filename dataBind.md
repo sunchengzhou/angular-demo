@@ -33,6 +33,7 @@
 ```
 
 ## HTML属性和DOM属性的关系
+
 1. 少量html属性映射dom属性，id
 2. 有html属性，没有dom属性，colspan
 3. 有dom，没有html ， textContent
@@ -40,3 +41,15 @@
 5. html是初始值，不能改变；Dom是动态值，可以改变
 6. angular是依赖DOM属性进行工作的
 
+> [关于html,dom属性说明的博文](https://www.cnblogs.com/wangfupeng1988/p/3631853.html)
+
+## 双向绑定
+
+1. app.module.ts引入FormsModule，引入到imports中
+2. [(ngModel)] 语法糖，进行双向绑定
+
+## 对于css属性的绑定：
+
+## 管道：对数据进行预处理的过滤器
+
+> [内置管道链接](https://www.jianshu.com/p/a8bd5a1d2c53)

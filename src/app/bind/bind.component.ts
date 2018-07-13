@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindComponent implements OnInit {
   private imgUrl:string = "../../assets/muke.jpg";
+  private birthday:Date = new Date();
+  private pi:number = 1111.1415026;
+  private myNum:number = 3;
   constructor() { }
 
   ngOnInit() {
