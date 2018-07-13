@@ -15,6 +15,8 @@
 
 ### 提供器
 
+> 提供器可以作用于某父组件的所有子组件，子组件的提供器会覆盖父组件的提供器
+
 + 正常写法：         providers:[ProductService]
 
 + 等价写法：         providers:[{ provide:ProductService, useClass: ProductService}]
