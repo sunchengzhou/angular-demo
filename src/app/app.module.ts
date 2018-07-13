@@ -14,6 +14,7 @@ import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductService } from './data/product.service';
+import { ProfilterPipe } from './pipe/profilter.pipe';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ProductService } from './data/product.service';
     SearchComponent,
     StarsComponent,
     ProductDetailComponent,
+    ProfilterPipe,
   ],
   imports: [
     BrowserModule,   //浏览器模块
