@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Mood } from './girlfriend/girlfriend.component';
+import { Mood, Random } from './girlfriend/girlfriend.component';
 declare var $: any;     //  申明$在ts中的类型
 
 @Component({
@@ -9,11 +9,15 @@ declare var $: any;     //  申明$在ts中的类型
 })
 export class AppComponent {
   mood: Mood = new Mood(50, '小花花');
+  public randoms:Random = new Random(0);
   ngOnInit() {
 
   }
   constructor(){}
   moodHandler(event:Mood) {
     this.mood = event;
+  }
+  randHandle(event:Random){
+    this.randoms = event;
   }
 }

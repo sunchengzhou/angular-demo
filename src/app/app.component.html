@@ -5,7 +5,7 @@
   <div class="form-group">
     <input type="text" class="form-control" placeholder="请输入股票代码" [(ngModel)]="stock" name="stock">
   </div>
-  <app-order [showStock]="stock"></app-order>
+  <app-order [showStock]="stock" [moodValue]="mood.happy" [randomValue]="randoms.randoms"></app-order>
   <p>---------------------------联动2---------------------------</p>
   <div class="container">
     <h4>外部组件观察：</h4>
@@ -13,8 +13,8 @@
       女朋友名字：{{mood.name}}
     </div>
     <div class="row">
-      女朋友心情指数：{{mood.happy | number:"2.2-2"}}%
+      父组件知道你女朋友心情指数：{{mood.happy | number:"2.2-2"}}%
     </div>
-
-    <app-girlfriend (lastMood)="moodHandler($event)"></app-girlfriend>
+    {{randomNum}}
+    <app-girlfriend (lastMood)="moodHandler($event)" (outNum)="randHandle($event)"></app-girlfriend>
   </div>

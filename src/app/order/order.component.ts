@@ -8,6 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 export class OrderComponent implements OnInit {
   @Input()
   showStock:string;
+
+  @Input()
+  moodValue:string;
+  @Input()
+  randomValue:number;
   constructor() { }
 
   ngOnInit() {

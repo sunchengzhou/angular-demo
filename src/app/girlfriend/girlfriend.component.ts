@@ -8,8 +8,13 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 export class GirlfriendComponent implements OnInit {
   name:string = "小丽";
   happy:number = 100;
+  randNum: number = 0;
+
   @Output()
   lastMood: EventEmitter<Mood> = new EventEmitter();
+
+  @Output()
+  outNum: EventEmitter<Random> = new EventEmitter();
 
   constructor() { 
     setInterval(()=> {
@@ -21,13 +26,25 @@ export class GirlfriendComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  handleRandom() {
+    this.randNum = Math.floor(Math.random()*100);
+    let randoms:Random = new Random(this.randNum);
+    this.outNum.emit(randoms);
+  }
 }
 
 export class Mood {
   constructor(
     public happy:number,
     public name:string,
+  ) {
+
+  }
+} 
+
+export class Random {
+  constructor(
+    public randoms:number,
   ) {
 
   }
