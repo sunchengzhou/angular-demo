@@ -7,7 +7,7 @@ declare var $: any;     //  申明$在ts中的类型
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  stock = '';
   ngOnInit(): void {
     $(() => {
       $('#test').click(() => {

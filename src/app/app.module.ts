@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
   declarations: [   //组件  指令 管道
+    OrderComponent,
     AppComponent,
   ],
   imports: [
