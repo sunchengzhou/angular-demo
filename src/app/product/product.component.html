@@ -1,7 +1,21 @@
-<div>
-  商品信息页面
-  <p>商品ID:{{product.id}}</p>
-  <p>商品名称:{{product.title}}</p>
-  <p>商品价格:{{product.price}}</p>
-  <p>商品品类:{{product.desc}}</p>
+<div class="container">
+  <table class="table table-striped">
+      <caption>商品1信息页面</caption>
+      <thead>
+        <tr>
+          <th>商品ID</th>
+          <th>商品名称</th>
+          <th>商品价格</th>
+          <th>商品品类</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>{{product.id}}</th>
+          <td>{{product.title}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.desc}}</td>
+        </tr>
+      </tbody>
+    </table>
 </div>
