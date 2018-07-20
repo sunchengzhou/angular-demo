@@ -53,3 +53,38 @@
 ## 管道：对数据进行预处理的过滤器
 
 > [内置管道链接](https://www.jianshu.com/p/a8bd5a1d2c53)
+
+``` javascript
+//1. 字母大写
+{{content| uppercase}}
+//2. 字母小写
+{{content| lowercase}}
+//3. 数字格式化
+{{num| number: '3.2-2'}}
+解释:
+{minIntegerDigits}.{minFractionDigits}-{maxfractionDigits}
+minIntegerDigits：整数部分保留最小的位数，默认值为1.
+minFractionDigits：小数部分保留最小的位数，默认值为0.
+maxFractionDigits：小数部分保留最大的位数，默认值为3.
+//4. 百分数格式
+{{num| percent:'1.2-2'}}
+解释:
+{minIntegerDigits}.{minFractionDigits}-{maxfractionDigits}
+minIntegerDigits：整数部分保留最小的位数，默认值为1.
+minFractionDigits：小数部分保留最小的位数，默认值为0.
+maxFractionDigits：小数部分保留最大的位数，默认值为3.
+//5. 字符串截取
+{{content| slice:2:4}}
+expression | slice: start[: end] 与java中substring类似
+//6. 日期格式化
+{{date| date:'yyyy-MM-dd HH:mm:ss'}}
+date可以是日期对象，也可以是字符串如：
+date = '2016/06/07 21:30:00';
+date = new Date();
+//6. json格式化
+ {{list| json}}
+主要用于测试环境
+//7. 多次管道
+{{content|lowercase | slice:2:4}}
+
+```
