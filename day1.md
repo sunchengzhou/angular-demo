@@ -1,13 +1,9 @@
 # angular程序架构
 
+## AngularJs 是针对Angular2以前的版本；Angular2~4是重写以后的版本，也是我们通常说的angular框架；
+
 > 组件，服务，指令----核心：模块
 > @angular/cli 组件
-> 指令如下：
-> ng version
-> ng new ProjectName
-> ng new Proroute --routing   创建一个带有路由的angular应用
-> ng g c 组件
-> ng g service data/xxx   创建一个服务
 
 | ng指令 | 含义 |
 | :-----: | :--------: |
