@@ -88,3 +88,5 @@ date = new Date();
 {{content|lowercase | slice:2:4}}
 
 ```
+
+[关于angular绑定的博文](https://blog.csdn.net/kuangshp128/article/details/71102049)
