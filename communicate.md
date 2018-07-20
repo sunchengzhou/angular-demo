@@ -20,10 +20,10 @@
 
 | 生命周期 | 对应功能 | 
 | :------| :------: |
-constructor | 构造器函数，一般用于注入服务
+constructor | 构造器函数，一般用于注入服务,该周期并不能检测到输入的属性
 ngOnChanges | 检测到输入数据变化，首次触发发生在ngOnInit前。注意对象的属性发生变化时监听不到
 ngOnInit | 组件初始化，通常会设置一些初始值
-ngDoCheck | 手动触发更新检查 
+ngDoCheck | 手动触发更新检查，input，button等点击，输入都会触发。并且会由子组件传递到父组件，慎用
 ngAfterContentInit | 内容初始化到组件之后
 ngAfterContentChecked | 内容变更检测之后
 ngAfterViewInit | 视图 初始化之后
