@@ -8,6 +8,14 @@
 
   @Output()
   lastMood: EventEmitter<Mood> = new EventEmitter();
+  // 父组件中检测emit
+  // 暴露：
+  <app-girlfriend (lastMood)="moodHandler($event)" (outNum)="randHandle($event)"></app-girlfriend>
+  // 接收：
+  moodHandler(event:Mood) {
+    this.mood = event;
+  }
+
 ```
 
 ## 使用中间人模式
