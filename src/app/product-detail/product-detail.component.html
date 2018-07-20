@@ -1,5 +1,19 @@
 <div>
-  <h4>商品名称：{{productTitle}}</h4>
+  <h4>商品名称：{{myPro.title}}</h4>
   <img src="../../assets/image/miyue.jpg" alt="">
+  <div class="items">
+    <p class="pull-right"> {{myPro.desc}} </p>
+    <p>
+      <app-stars [rating]="myPro.rating"></app-stars>
+    </p>
+  </div>
+  <div class="items">
+    <p>商品价格：<span>￥{{myPro.price}}</span> </p>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">最新评价：</div>
+    <div *ngFor="let item of myPro.category" class="panel-body">
+      {{item}}
+    </div>
+  </div>
 </div>
-
