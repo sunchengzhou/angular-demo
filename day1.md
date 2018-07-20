@@ -2,6 +2,8 @@
 
 ## AngularJs 是针对Angular2以前的版本；Angular2~4是重写以后的版本，也是我们通常说的angular框架；
 
+## [中文官网](https://angular.cn/)
+
 > 组件，服务，指令----核心：模块
 > @angular/cli 组件
 
