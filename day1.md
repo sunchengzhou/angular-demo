@@ -5,7 +5,18 @@
 > 指令如下：
 > ng version
 > ng new ProjectName
+> ng new Proroute --routing   创建一个带有路由的angular应用
 > ng g c 组件
+> ng g service data/xxx   创建一个服务
+
+| ng指令 | 含义 |
+| :-----: | :--------: |
+| ng version | 查看版本信息 | 
+| ng new ProjectName | 新建angular应用 | 
+| ng new Proroute --routing | 新建一个带有路由的angular应用 |
+| ng g c componentA | 创建一个组件 | 
+| ng g service data/xxx |  创建一个服务 |
+| ng g pipe pipe/xxx |  创建一个管道 |
 
 # 组件的知识：
 ## 必备的：
