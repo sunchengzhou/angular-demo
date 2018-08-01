@@ -1,0 +1,26 @@
+<form #myForm=ngForm class="container" (ngSubmit)="onSubmit(myForm.value)">
+  <!-- ngNoForm不处理表单 -->
+  <div>用户名：
+    <input #username="ngModel" ngModel type="text" name="username">
+  </div>
+  <div>手机：
+    <input #mobile="ngModel" ngModel type="text" name="mobile">
+  </div>
+  <div ngModelGroup>
+    <div>
+      密码：
+      <input type="password" name="pass1" ngModel>
+    </div>
+    <div>
+      重复密码：
+      <input type="password" name="pass2" ngModel>
+    </div>
+  </div>
+  <button type="submit">注册</button>
+</form>
+<div class="container">
+  {{myForm.value | json }}
+</div>
+<div class="container">
+  {{username.value | json}}
+</div>

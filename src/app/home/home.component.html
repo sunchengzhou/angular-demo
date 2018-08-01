@@ -1,3 +1,17 @@
-<p>
-  这里是主页组件
-</p>
+<form [formGroup]="myGroup" (submit)="onSubmit()">
+  <div formGroupName="dateRange">
+    起始日期：<input type="date" formControlName="from">
+    截止日期：<input type="date" formControlName="to">
+  </div>
+  <div>
+    <ul formArrayName="emails">
+      <li *ngFor="let e of this.myGroup.get('emails').controls;let i=index;">
+        <input type="text" [formControlName]="i">
+      </li>
+    </ul>
+    <button type="button" (click)="addEmail()">增加email</button>
+  </div>
+  <div>
+    <button type="submit">保存信息</button>
+  </div>
+</form>

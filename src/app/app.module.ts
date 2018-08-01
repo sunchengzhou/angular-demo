@@ -1,28 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ProductComponent } from './product/product.component';
-import { Code404Component } from './code404/code404.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+import { ModelsComponent } from './models/models.component';
 
 
 @NgModule({
   declarations: [   //组件  指令 管道
     AppComponent,
     HomeComponent,
-    ProductComponent,
-    Code,
-    NavbarComponent,
-    FooterComponent404Component
+    ModelsComponent 
   ],
   imports: [
     BrowserModule,   //浏览器模块
-    AppRoutingModule  //路由模块
+    FormsModule,     // 模板表单
+    ReactiveFormsModule, // 响应式表单
   ],
   providers: [],
   bootstrap: [AppComponent]

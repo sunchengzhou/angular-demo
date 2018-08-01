@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 declare var $: any;     //  申明$在ts中的类型
 
 @Component({
@@ -16,11 +15,5 @@ export class AppComponent {
       });
     });
   }
-  constructor(private router:Router){
-
-  }
-
-  toProductDetail() {
-    this.router.navigate(['/product'])
-  }
+  constructor(){ }
 }
